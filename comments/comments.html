@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Comments</title>
+</head>
+
+<body>
+  <div class="pt-3 px-[8%] flex justify-between">
+    <div class="flex gap-3">
+      <a class="text-xl underline text-blue-600" href="./albums/albums.html">Albums</a>
+      <a class="text-xl underline text-blue-600" href="./comments/comments.html">Comments</a>
+      <a class="text-xl underline text-blue-600" href="./photos/photos.html">Photos</a>
+      <a class="text-xl underline text-blue-600" href="./todos/todos.html">Todos</a>
+      <a class="text-xl underline text-blue-600" href="./users/users.html">Users</a>
+    </div>
+    <div class="flex gap-3">
+      <button id="prev" class="w-10 h-10 bg-blue-700 rounded-full">
+        <i class="text-white text-xl fa-solid fa-angle-left"></i>
+      </button>
+      <button id="next" class="w-10 h-10 bg-blue-700 rounded-full">
+        <i class="text-white text-xl fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+    <div>
+      <label for="selected">Count:</label>
+      <select name="select" class="border w-20 outline-none" id="selected">
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option selected value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="px-[8%] pt-8" id="result">
+  </div>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./comments.js"></script>
+</body>
+
+</html>
